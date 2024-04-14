@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.form-group {
+  position: relative;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  /* position: relative; */
+  width:80% ;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button{
+  font-size: 25px;
+  border: none;
+  background-color: rgba(0, 0, 255, 0.334);
+  width: 100%;
+  padding: 5px 5px;
+}
+
+
+.tooltip {
+  font-size: 13px;
+  padding: 2px 6px;
+  top: -3px;
+  color: #888;
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  color: rgb(211, 207, 207);
+  font-size: 13px;
+  width: 250px;
+  background-color: rgb(20, 19, 19);
+  padding: 5px 5px;
+  border-radius: 0px;
+  top: -20px;
+  left: 20px;
+  display: none;
+}
+
+.tooltip:hover::after {
+  display: block;
+}
+.error-icon {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  color: red;
+  border: 1px solid#888;;
+  padding: 2px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 45px;
+  right : 90px;
+}
+.error-icon::after {
+  content: "Enter number only";
+  position: absolute;
+  color: rgb(211, 207, 207);
+  font-size: 13px;
+  width: 110px;
+  background-color: rgb(20, 19, 19);
+  padding: 5px 5px;
+  border-radius: 0px;
+  top: -32px;
+  right: -10px;
+  display: none;
+}
+
+.error-icon:hover::after {
+  display: block;
+  
+}
+
+.error {
+  border-color: #e4dada;
+  box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+}
+
+.modal-content {
+  background-color: #ffffff; /* White background color */
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #ccc; /* Blue border */
+  max-width: 400px; /* Adjust maximum width */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  text-align: center; 
+}
+
+.modal-content p {
+  margin-bottom: 10px; 
+  
+}
+
+.close {
+  background-color: rgba(0, 0, 255, 0.334); /* Blue background color */
+  color: white; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  margin-top: 20px; /* Adjust margin-top to create space between text and button */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .container {
+    
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .form-group {
+    
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  input[type="number"] {
+    width: 80%;
+    padding: 5px;
+  }
+  select{ 
+    width: 60%;
+    padding: 5px;
+  }
+
+  .tooltip {
+  font-size: 10px;
+  padding: 2px 4px;
+  top: -3px;
+  color: #888;
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+  .tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  color: rgb(211, 207, 207);
+  font-size: 10px;
+  width: 200px;
+  background-color: rgb(20, 19, 19);
+  padding: 5px 5px;
+  border-radius: 0px;
+  top: -15px;
+  left: 20px;
+  display: none;
+}
+
+  .error-icon {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  color: red;
+  border: 1px solid#888;;
+  padding: 2px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 35px;
+  right : 65px;
+}
+.error-icon::after {
+  content: "Enter number only";
+  position: absolute;
+  color: rgb(211, 207, 207);
+  font-size: 10px;
+  width: 85px;
+  background-color: rgb(20, 19, 19);
+  padding: 5px 5px;
+  border-radius: 0px;
+  top: -35px;
+  right: -10px;
+  display: none;
+}
+
+  .error-tooltip {
+    padding: 3px 5px;
+    font-size: 12px;
+  }
+
+  .modal-content {
+    margin: 10% auto;
+    padding: 10px;
+    max-width: 300px;
+  }
+
+  .close {
+    
+    padding: 8px 15px;
+    margin-top: 15px;
+  }
+}
