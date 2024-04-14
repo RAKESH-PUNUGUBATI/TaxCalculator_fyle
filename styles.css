@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 25px;
-  background-image: url("testcases/tax.avif");
+  background-color: rgba(240, 232, 232, 0.947);
 }
 
 .container {
@@ -152,11 +152,6 @@ button{
 
 /* Responsive styles */
 @media screen and (max-width: 480px) {
-  body{
-    background-image: none;
-    background-color: rgba(240, 232, 232, 0.947);
-  }
-
   .container {
     margin: 20px auto;
     padding: 10px;
