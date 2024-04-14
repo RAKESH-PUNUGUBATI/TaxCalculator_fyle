@@ -120,16 +120,16 @@ button{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.4); 
 }
 
 .modal-content {
-  background-color: #ffffff; /* White background color */
+  background-color: #ffffff; 
   margin: 15% auto;
   padding: 20px;
-  border: 2px solid #ccc; /* Blue border */
-  max-width: 400px; /* Adjust maximum width */
-  border-radius: 10px; /* Rounded corners */
+  border: 2px solid #ccc; 
+  max-width: 400px; 
+  border-radius:10px; 
   position: relative;
   text-align: center; 
 }
@@ -140,13 +140,13 @@ button{
 }
 
 .close {
-  background-color: rgba(0, 0, 255, 0.334); /* Blue background color */
-  color: white; /* White text color */
+  background-color: rgba(0, 0, 255, 0.334); 
+  color: white; 
   border: none;
   padding: 10px 20px;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px; 
   cursor: pointer;
-  margin-top: 20px; /* Adjust margin-top to create space between text and button */
+  margin-top: 20px; 
 }
 
 /* Responsive styles */
@@ -240,7 +240,6 @@ button{
   }
 
   .close {
-    
     padding: 8px 15px;
     margin-top: 15px;
   }

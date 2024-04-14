@@ -45,15 +45,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
     closeModal.addEventListener('click', function () {
       modal.style.display = 'none';
-      form.reset(); // Reset the form fields
-      clearErrorMessages(); // Clear any previous error messages
+      form.reset(); 
+      clearErrorMessages(); 
     });
     
     window.addEventListener('click', function (e) {
       if (e.target == modal) {
         modal.style.display = 'none';
-        form.reset(); // Reset the form fields
-        clearErrorMessages(); // Clear any previous error messages
+        form.reset(); 
+        clearErrorMessages(); 
       }
     });
   
