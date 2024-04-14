@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 25px;
+  background-image: url("testcases/tax.avif");
 }
 
 .container {
@@ -39,7 +40,7 @@ select {
 button{
   font-size: 25px;
   border: none;
-  background-color: rgba(0, 0, 255, 0.334);
+  background-color: #c6b4b4;
   width: 100%;
   padding: 5px 5px;
 }
@@ -140,7 +141,7 @@ button{
 }
 
 .close {
-  background-color: rgba(0, 0, 255, 0.334); 
+  background-color: #c6b4b4; 
   color: white; 
   border: none;
   padding: 10px 20px;
@@ -151,8 +152,12 @@ button{
 
 /* Responsive styles */
 @media screen and (max-width: 480px) {
+  body{
+    background-image: none;
+    background-color: rgba(240, 232, 232, 0.947);
+  }
+
   .container {
-    
     margin: 20px auto;
     padding: 10px;
   }
